@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Google font -->
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+   
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./css/login and signup.css" />
+    <title>Sign Up | Login </title>
+  </head>
+  <body>
+    <section>
+      <div class="container"  >
+        <div class="user login" onsubmit="return validation()">
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Not a member?
+                <span data-id="#ff0066">Register now</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Login Now</h2>
+                <input type="email" id="email"  placeholder="Email or Phone Number">
+                <small id="validEmail"></small>
+                <!-- <span id="validEmail"> </span> -->
+                <div>
+                  <input type="password" id="password" placeholder="Password">
+                  <!-- <span id="validPassword"> </span> -->
+                  <div class="icon form-icon">
+                    <!-- <img src="./images/eye.svg" alt="" /> -->
+                  </div>
+                </div>
+                <span>Forgot Your Password</span>
+                <input type="Submit" id="login" value="Login" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Register -->
+        <div class="user signup" onsubmit="return validRegister()" >
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Already a member?
+                <span data-id="#1a1aff">Login now</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Create Account</h2>
+                <input type="text" type="name" id="name" placeholder="Your Name">
+                <input type="email" id="email2" placeholder="Enter Your Email"/>
+                <small id="validEmail2"></small>
+                <!-- <span id="validEmail2"> </span> -->
+                <input type="phone" id="phone" placeholder="Phone Number">
+                <div>
+                  <input type="password" id="passwordRegister" placeholder="Password" />
+                  <small id="validPassword"></small>
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <input type="password" id="passwordConfirm" placeholder="Confirm Password" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <input type="Submit" id="signup" value="Register" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="img-box">
+            <img src="./images/trial.svg" alt="" />
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- IndexJs -->
+    <script src="./js/login and signup.js"></script>
+  </body>
+</html>
